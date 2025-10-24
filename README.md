@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-This repository provides a ComfyUI workflow designed specifically for upscaling and enhancing AI-generated videos from Sora 2 (OpenAI's latest video generation model) and other sources. The workflow uses a progressive magnification technique combined with the WAN (Waifu Anime Network) model to achieve high-quality results.
+This repository provides a ComfyUI workflow designed specifically for upscaling and enhancing AI-generated videos from Sora 2 (OpenAI's latest video generation model) and other sources. The workflow uses a progressive magnification technique combined with the WAN model to achieve high-quality results.
 
 ### Why This Workflow?
 
@@ -41,7 +41,7 @@ Please visit cseti007's repository for more amazing ComfyUI workflows and upscal
 ### Prerequisites
 
 - **ComfyUI** installed and configured
-- **WAN Model** (Waifu Anime Network) - Download and place in your ComfyUI models directory
+- **WAN Model** - Download and place in your ComfyUI models directory
 - **Hardware Requirements**:
   - **Recommended**: NVIDIA RTX 6000 Pro or equivalent
   - **Minimum**: 12GB+ VRAM for stable operation
