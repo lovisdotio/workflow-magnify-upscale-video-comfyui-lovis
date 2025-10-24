@@ -36,6 +36,16 @@ This counter-intuitive "downscale then upscale" approach helps eliminate compres
 
 Please visit cseti007's repository for more amazing ComfyUI workflows and upscaling techniques!
 
+### 🔧 Key Modifications from Original Workflow
+
+This version includes several important changes from cseti007's original workflow:
+
+- **Removed Performance Optimizations**: Stripped out certain speed optimizations that could reduce output quality. This version prioritizes quality over processing speed.
+- **Face Detailer Removed**: The original face detailer node has been removed as it sometimes introduced artifacts. However, this may explain some of the facial consistency challenges (see Known Limitations below).
+- **LLM Integration in Magnification Loop**: Implemented LLM prompts within each magnification pass, allowing fresh prompt generation at each upscaling stage for better content-aware enhancement.
+
+These modifications aim to maximize output quality, though they may result in longer processing times compared to the original workflow.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -81,6 +91,13 @@ cd workflow-magnify-upscale-video-comfyui-lovis
 - **Resolution**: Input videos around 360-480p tend to work best
 - **Frame Rate**: Maintain original frame rate for temporal consistency
 - **Batch Processing**: Process videos in batches if you have multiple files
+
+### ⚠️ Known Limitations
+
+- **Face Consistency**: Currently, the workflow may struggle with maintaining perfect facial consistency across frames, especially in close-up shots. This is an area for future improvement.
+- **Best Use Cases**: Works best with landscapes, abstract content, and wide shots. Portrait-focused videos may require additional refinement.
+
+Despite these limitations, we hope this workflow will be useful for your projects and we welcome community contributions to improve facial consistency handling!
 
 ## 📊 Examples
 
